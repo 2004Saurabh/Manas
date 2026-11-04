@@ -12,4 +12,3 @@ dist-ssr
 *.sln
 *.sw?
 *.zip
-backend/data/*.db
