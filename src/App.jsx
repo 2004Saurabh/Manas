@@ -6,6 +6,7 @@ import ServicesPage from "./pages/ServicesPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
+import PortalPage from "./pages/PortalPage";
 import WhatsAppIcon from "./components/WhatsAppIcon";
 import { CONTACT_INFO } from "./data/manasData";
 
@@ -66,11 +67,17 @@ export default function App() {
         return <AboutPage navigate={navigate} />;
       case "/contact":
         return <ContactPage preselectedService={selectedService} />;
+      case "/portal":
+        return <PortalPage navigate={navigate} />;
       case "/":
       default:
         return <HomePage navigate={navigate} />;
     }
   };
+
+  if (currentPath === "/portal") {
+    return <PortalPage navigate={navigate} />;
+  }
 
   return (
     <div className="relative min-h-screen bg-background text-foreground flex flex-col justify-between selection:bg-primary/40 selection:text-white">

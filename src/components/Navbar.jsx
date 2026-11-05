@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { ArrowUpRight, Menu, X } from "lucide-react";
+import { ArrowUpRight, Menu, X, Shield } from "lucide-react";
 import { BRAND_ASSETS } from "../data/manasData";
 
 export default function Navbar({ currentPath, navigate }) {
@@ -62,6 +62,17 @@ export default function Navbar({ currentPath, navigate }) {
         <div className="flex items-center gap-2.5">
           <button
             type="button"
+            onClick={() => handleNavClick("/portal")}
+            className="inline-flex items-center gap-1.5 rounded-full border border-white/10 bg-white/5 px-3 py-1.5 text-xs font-semibold text-white transition-all hover:bg-white/15 hover:border-primary/40 shadow-sm"
+            title="Employee Attendance & Field CRM Portal"
+          >
+            <Shield className="h-3.5 w-3.5 text-accent" />
+            <span className="hidden sm:inline">Staff Portal</span>
+            <span className="sm:hidden">Portal</span>
+          </button>
+
+          <button
+            type="button"
             onClick={() => handleNavClick("/contact")}
             className="inline-flex items-center gap-1.5 rounded-full bg-primary px-3.5 py-1.5 text-xs font-semibold text-primary-foreground transition-transform hover:scale-105 hover:bg-primary/90 shadow-md"
           >
@@ -101,6 +112,18 @@ export default function Navbar({ currentPath, navigate }) {
                 </button>
               );
             })}
+
+            <button
+              type="button"
+              onClick={() => handleNavClick("/portal")}
+              className="mt-1 flex items-center justify-between rounded-xl border border-primary/30 bg-primary/10 px-4 py-2.5 text-left text-sm font-semibold text-primary transition"
+            >
+              <div className="flex items-center gap-2">
+                <Shield className="h-4 w-4 text-accent" />
+                <span>Staff & Employee Portal</span>
+              </div>
+              <ArrowUpRight className="h-3.5 w-3.5" />
+            </button>
           </nav>
         </div>
       )}
