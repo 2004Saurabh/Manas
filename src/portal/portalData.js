@@ -8,7 +8,7 @@ export const INITIAL_PORTAL_DATA = {
   // Office Geofence Settings (Indore HQ)
   geofence: {
     officeName: "Manas Advertising - Head Office",
-    address: "22°47'22.6\"N 75°54'27.2\"E, Indore, Madhya Pradesh 452010",
+    address: "1st Floor Nanaksar Kota Stone, In Front Of ICICI Bank, AB Road, Dewas Naka, Indore (M.P)",
     lat: 22.7896225,
     lng: 75.9075439,
     radiusMeters: 250, // 250 meters radius
@@ -535,6 +535,12 @@ export function getPortalData() {
     // Auto-migrate essential collections if missing
     if (!parsed.geofence) {
       parsed.geofence = INITIAL_PORTAL_DATA.geofence;
+      needsUpdate = true;
+    } else if (
+      !parsed.geofence.address ||
+      !parsed.geofence.address.includes("Nanaksar")
+    ) {
+      parsed.geofence.address = INITIAL_PORTAL_DATA.geofence.address;
       needsUpdate = true;
     }
     if (!Array.isArray(parsed.attendance)) {

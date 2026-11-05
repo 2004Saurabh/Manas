@@ -63,7 +63,7 @@ export default function ContactPage({ preselectedService }) {
     {
       icon: MapPin,
       label: "Studio",
-      value: CONTACT_INFO.coordinates,
+      value: CONTACT_INFO.shortAddress,
       href: "#map",
     },
   ];
@@ -176,9 +176,9 @@ export default function ContactPage({ preselectedService }) {
                 loading="lazy"
               />
               <div className="p-3 bg-[#121424] border-t border-white/10 flex items-center justify-between">
-                <span className="text-xs text-muted-foreground flex items-center gap-1.5">
-                  <MapPin className="h-3.5 w-3.5 text-accent" />
-                  {CONTACT_INFO.coordinates}
+                <span className="text-xs text-muted-foreground flex items-center gap-1.5 truncate max-w-[70%]">
+                  <MapPin className="h-3.5 w-3.5 text-accent shrink-0" />
+                  <span className="truncate">{CONTACT_INFO.address}</span>
                 </span>
                 <a
                   href={CONTACT_INFO.mapUrl}
@@ -226,10 +226,10 @@ export default function ContactPage({ preselectedService }) {
                         Our Studio Location
                       </div>
                       <div className="text-sm font-semibold text-foreground mt-0.5">
-                        Manas Advertising ({CONTACT_INFO.coordinates})
+                        Manas Advertising — {CONTACT_INFO.shortAddress}
                       </div>
                       <p className="text-xs text-muted-foreground mt-1">
-                        Here is our exact GPS location so you can navigate directly or visit us anytime.
+                        {CONTACT_INFO.address}
                       </p>
                       <div className="mt-3 flex flex-wrap gap-2">
                         <a

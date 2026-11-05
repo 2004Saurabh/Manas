@@ -41,9 +41,10 @@ export default function Footer({ navigate }) {
               href={CONTACT_INFO.mapUrl}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center gap-1.5 text-xs text-accent hover:underline font-medium"
+              className="inline-flex items-start gap-1.5 text-xs text-accent hover:underline font-medium leading-relaxed max-w-xs"
             >
-              <span>📍 {CONTACT_INFO.coordinates}</span>
+              <span className="shrink-0 mt-0.5">📍</span>
+              <span>{CONTACT_INFO.address}</span>
             </a>
           </div>
         </div>

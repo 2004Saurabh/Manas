@@ -609,7 +609,7 @@ export default function QuotationBuilderTab({
                   Outdoor Media · Digital Flex · Retail Storefronts · Fleet Graphics
                 </p>
                 <p className="mt-2 text-xs text-gray-600 max-w-sm">
-                  Head Office: 22°47'22.6"N 75°54'27.2"E, Near Bypass, Indore, Madhya Pradesh 452010
+                  Head Office: 1st Floor Nanaksar Kota Stone, In Front Of ICICI Bank, AB Road, Dewas Naka, Indore (M.P)
                   <br />
                   Phone: +91 98260 12345 · GSTIN: 23AABCM1042P1Z4
                   <br />
