@@ -130,27 +130,7 @@ export default function Footer({ navigate }) {
               >
                 Instagram
               </a>
-            </li>
-            <li>
-              <a
-                href={CONTACT_INFO.socials.linkedin}
-                target="_blank"
-                rel="noreferrer"
-                className="text-foreground/80 transition hover:text-foreground"
-              >
-                LinkedIn
-              </a>
-            </li>
-            <li>
-              <a
-                href={CONTACT_INFO.socials.behance}
-                target="_blank"
-                rel="noreferrer"
-                className="text-foreground/80 transition hover:text-foreground"
-              >
-                Behance
-              </a>
-            </li>
+            </li> 
             <li>
               <a
                 href={CONTACT_INFO.socials.facebook}

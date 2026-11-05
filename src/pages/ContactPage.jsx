@@ -12,6 +12,7 @@ import {
   ExternalLink,
 } from "lucide-react";
 import BackgroundBlobs from "../components/BackgroundBlobs";
+import WhatsAppIcon from "../components/WhatsAppIcon";
 import { SERVICES, FAQS, CONTACT_INFO } from "../data/manasData";
 
 export default function ContactPage({ preselectedService }) {
@@ -44,15 +45,18 @@ export default function ContactPage({ preselectedService }) {
     {
       icon: Phone,
       label: "Call us",
-      value: CONTACT_INFO.phone,
+      value: CONTACT_INFO.phonePrimary,
+      sub: CONTACT_INFO.phoneSecondary,
       href: `tel:${CONTACT_INFO.phoneRaw}`,
     },
     {
-      icon: MessageCircle,
+      icon: WhatsAppIcon,
       label: "WhatsApp",
-      value: "Chat now",
-      href: `https://wa.me/${CONTACT_INFO.phoneRaw}?text=Hi%20Manas%20Advertising%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.`,
+      value: CONTACT_INFO.whatsapp,
+      sub: "Instant Chat",
+      href: CONTACT_INFO.whatsappUrl,
       external: true,
+      iconBg: "bg-[#25D366] text-white shadow-[0_4px_14px_rgba(37,211,102,0.4)]",
     },
     {
       icon: Mail,
@@ -105,15 +109,20 @@ export default function ContactPage({ preselectedService }) {
                   rel={card.external ? "noreferrer" : undefined}
                   className="group rounded-2xl glass-strong p-6 transition-all duration-300 hover:-translate-y-1.5 border border-white/10 shadow-md block"
                 >
-                  <div className="grid h-12 w-12 place-items-center rounded-xl bg-primary/90 text-primary-foreground shadow-md">
-                    <IconComp className="h-5 w-5" />
+                  <div className={`grid h-12 w-12 place-items-center rounded-xl ${card.iconBg || "bg-primary/90 text-primary-foreground"} shadow-md`}>
+                    <IconComp className="h-5 w-5 fill-current" />
                   </div>
                   <div className="mt-5 text-[10px] uppercase tracking-widest text-muted-foreground font-semibold">
                     {card.label}
                   </div>
-                  <div className="mt-1 font-display text-lg font-semibold transition group-hover:text-accent text-foreground">
+                  <div className="mt-1 font-display text-lg font-semibold transition group-hover:text-accent text-foreground truncate">
                     {card.value}
                   </div>
+                  {card.sub && (
+                    <div className="mt-0.5 text-xs text-muted-foreground font-medium">
+                      {card.sub}
+                    </div>
+                  )}
                 </a>
               );
             })}

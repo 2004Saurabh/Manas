@@ -613,8 +613,13 @@ export const FAQS = [
 ];
 
 export const CONTACT_INFO = {
-  phone: "+91 9827206185 , +91 7470562475 ",
-  phoneRaw: "+91 9827206185 , +91 7470562475",
+  phone: "+91 98272 06185 / +91 74705 62475",
+  phonePrimary: "+91 98272 06185",
+  phoneSecondary: "+91 74705 62475",
+  phoneRaw: "+919827206185",
+  whatsapp: "+91 98272 06185",
+  whatsappRaw: "919827206185",
+  whatsappUrl: "https://wa.me/919827206185?text=Hi%20Manas%20Advertising%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.",
   email: "enquiry@manasadvertising.in",
   address: "1st Floor Nanaksar Kota Stone, In Front Of ICICI Bank, AB Road, Dewas Naka, Indore (M.P)",
   shortAddress: "Dewas Naka, AB Road, Indore",

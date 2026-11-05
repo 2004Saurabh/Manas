@@ -6,7 +6,7 @@ import ServicesPage from "./pages/ServicesPage";
 import PortfolioPage from "./pages/PortfolioPage";
 import AboutPage from "./pages/AboutPage";
 import ContactPage from "./pages/ContactPage";
-import { MessageCircle } from "lucide-react";
+import WhatsAppIcon from "./components/WhatsAppIcon";
 import { CONTACT_INFO } from "./data/manasData";
 
 export default function App() {
@@ -85,13 +85,23 @@ export default function App() {
 
       {/* Floating WhatsApp Quick Action Button */}
       <a
-        href={`https://wa.me/${CONTACT_INFO.phoneRaw}?text=Hi%20Manas%20Advertising%2C%20I%20would%20like%20to%20inquire%20about%20your%20services.`}
+        href={CONTACT_INFO.whatsappUrl}
         target="_blank"
         rel="noreferrer"
         aria-label="Chat on WhatsApp"
-        className="fixed bottom-6 right-6 z-40 grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-white shadow-2xl transition-all duration-300 hover:scale-110 hover:shadow-[#25D366]/40 glow"
+        title="Chat with Manas Advertising on WhatsApp"
+        className="fixed bottom-6 right-6 z-40 flex items-center gap-2 group cursor-pointer focus:outline-none"
       >
-        <MessageCircle className="h-7 w-7 fill-current" />
+        <span className="hidden sm:inline-flex items-center rounded-full bg-[#121424]/90 backdrop-blur px-3 py-1.5 text-xs font-semibold text-white border border-white/10 shadow-lg opacity-0 transition-opacity duration-200 group-hover:opacity-100">
+          Chat on WhatsApp
+        </span>
+        <div className="relative grid h-14 w-14 place-items-center rounded-full bg-[#25D366] text-white shadow-[0_10px_25px_rgba(37,211,102,0.45)] transition-all duration-300 group-hover:scale-110 group-hover:shadow-[0_15px_30px_rgba(37,211,102,0.65)]">
+          <WhatsAppIcon className="h-7 w-7 fill-white" />
+          <span className="absolute -top-0.5 -right-0.5 flex h-3.5 w-3.5">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-[#25D366] opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3.5 w-3.5 bg-emerald-400 border-2 border-[#121424]"></span>
+          </span>
+        </div>
       </a>
     </div>
   );
