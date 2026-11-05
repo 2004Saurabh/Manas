@@ -111,15 +111,6 @@ export default function Footer({ navigate }) {
                 Contact
               </button>
             </li>
-            <li>
-              <button
-                type="button"
-                onClick={() => navigate("/portal")}
-                className="text-accent font-semibold transition hover:underline"
-              >
-                Staff & Field CRM Portal
-              </button>
-            </li>
           </ul>
         </div>
 
