@@ -50,6 +50,13 @@ export const BRAND_ASSETS = {
     "/assets/offset/offset-vivid-rollers.jpg",
     "/assets/offset/offset-web-cmyk-roll.jpg",
   ],
+  cuttingBox: "/assets/cutting-box/box-folding-machine.jpg",
+  cuttingBoxGallery: [
+    "/assets/cutting-box/box-folding-machine.jpg",
+    "/assets/cutting-box/digital-shape-cutting-table.jpg",
+    "/assets/cutting-box/automatic-box-maker-line.jpg",
+    "/assets/cutting-box/flatbed-die-cutting-press.jpg",
+  ],
 };
 
 export const SERVICES = [
@@ -256,6 +263,36 @@ export const SERVICES = [
       "High-speed commercial offset print run",
       "Folding, saddle-stitching, perfect binding & die-cutting",
       "Bulk moisture-sealed packaging & pan-India dispatch"
+    ]
+  },
+  {
+    slug: "cutting-box-making",
+    iconName: "Package",
+    title: "Any Shapes Cutting & Box Making",
+    img: BRAND_ASSETS.cuttingBox,
+    gallery: BRAND_ASSETS.cuttingBoxGallery,
+    galleryLabels: [
+      "Automated Box Folding Machine",
+      "Digital Shape Cutting Table",
+      "Industrial Box Production Line",
+      "Flatbed Die-Cutting Press",
+    ],
+    tagline: "Precision die-cutting & custom packaging for every form factor.",
+    desc: "Automated digital shape cutting, computerized creasing, and high-speed box making for custom packaging, luxury mono-cartons, corrugated boxes, sweet & gift boxes, rigid boxes, stickers, acrylics, and display POSM. From single prototypes to high-volume commercial production.",
+    features: [
+      "Automated digital shape cutting & CNC contour cutting",
+      "High-speed computerized folder-gluer box production line",
+      "Custom rigid boxes, corrugated cartons, mono-cartons & gift packaging",
+      "Die-less digital precision cutting & heavy-duty flatbed die presses",
+      "Precision creasing, micro-perforation, folding & hot-melt gluing",
+      "Multi-material compatibility: paperboard, kraft, sunboard, foam & acrylic"
+    ],
+    deliverables: [
+      "3D packaging structural design & dieline CAD files",
+      "Physical sample mockups & prototypes before bulk run",
+      "Custom precision-cut shapes & promotional packaging boxes",
+      "High-speed folder-glued mass manufacturing with zero defects",
+      "Flat-packed or pre-assembled delivery with pan-India logistics"
     ]
   }
 ];
@@ -517,6 +554,38 @@ export const PORTFOLIO_PROJECTS = [
     year: "2025",
     img: "/assets/shop/shop-mall-wall-mural.jpg",
     span: "col-span-1"
+  },
+  {
+    title: "Automated Box Folding & Production Machine",
+    client: "Manas Packaging Division",
+    category: "Cutting & Box Making",
+    year: "2025",
+    img: "/assets/cutting-box/box-folding-machine.jpg",
+    span: "col-span-2 row-span-2"
+  },
+  {
+    title: "Digital Precision Shape Cutting & Creasing Table",
+    client: "Manas Precision Works",
+    category: "Cutting & Box Making",
+    year: "2025",
+    img: "/assets/cutting-box/digital-shape-cutting-table.jpg",
+    span: "col-span-2"
+  },
+  {
+    title: "Industrial Carton & Gift Box Folder-Gluer Line",
+    client: "Manas Luxury Packaging",
+    category: "Cutting & Box Making",
+    year: "2025",
+    img: "/assets/cutting-box/automatic-box-maker-line.jpg",
+    span: "col-span-1"
+  },
+  {
+    title: "Heavy-Duty Flatbed Die-Cutting Press FS-D20x30",
+    client: "Manas Die Craft",
+    category: "Cutting & Box Making",
+    year: "2024",
+    img: "/assets/cutting-box/flatbed-die-cutting-press.jpg",
+    span: "col-span-1"
   }
 ];
 
@@ -544,9 +613,9 @@ export const FAQS = [
 ];
 
 export const CONTACT_INFO = {
-  phone: "+91 99999 99999",
-  phoneRaw: "919999999999",
-  email: "hello@manasadvertising.com",
+  phone: "+91 9827206185 , +91 7470562475 ",
+  phoneRaw: "+91 9827206185 , +91 7470562475",
+  email: "enquiry@manasadvertising.in",
   address: "1st Floor Nanaksar Kota Stone, In Front Of ICICI Bank, AB Road, Dewas Naka, Indore (M.P)",
   shortAddress: "Dewas Naka, AB Road, Indore",
   coordinates: "22°47'22.6\"N 75°54'27.2\"E",
@@ -555,8 +624,6 @@ export const CONTACT_INFO = {
   hours: "Mon – Sat · 09:00 – 19:00",
   socials: {
     instagram: "https://instagram.com",
-    linkedin: "https://linkedin.com",
-    behance: "https://behance.net",
     facebook: "https://facebook.com"
   }
 };

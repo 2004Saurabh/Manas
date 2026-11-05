@@ -12,6 +12,7 @@ import {
   Printer,
   Palette,
   Store,
+  Package,
 } from "lucide-react";
 import Counter from "../components/Counter";
 import ServicesWheel from "../components/ServicesWheel";
@@ -31,6 +32,7 @@ const ICON_MAP = {
   Printer,
   Palette,
   Store,
+  Package,
 };
 
 export default function HomePage({ navigate }) {
@@ -134,7 +136,7 @@ export default function HomePage({ navigate }) {
               Every surface. <span className="text-gradient">Every city.</span>
             </h2>
             <p className="mt-4 text-muted-foreground text-base sm:text-lg">
-              Seven disciplines. One relentless standard. We handle the concept,
+              Eight disciplines. One relentless standard. We handle the concept,
               the print, and the install — end to end.
             </p>
           </div>

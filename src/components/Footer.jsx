@@ -12,6 +12,7 @@ export default function Footer({ navigate }) {
     { label: "Vinyl Printing", slug: "vinyl-printing" },
     { label: "In-Shop Branding", slug: "in-shop-branding" },
     { label: "Offset Printing", slug: "offset-printing" },
+    { label: "Any Shapes Cutting & Box Making", slug: "cutting-box-making" },
   ];
 
   return (

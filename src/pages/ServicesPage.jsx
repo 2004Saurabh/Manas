@@ -9,6 +9,7 @@ import {
   Printer,
   Palette,
   Store,
+  Package,
   Eye,
 } from "lucide-react";
 import BackgroundBlobs from "../components/BackgroundBlobs";
@@ -21,6 +22,7 @@ const ICON_MAP = {
   Printer,
   Palette,
   Store,
+  Package,
 };
 
 function ServiceArticle({ service, index, navigate }) {
@@ -192,7 +194,7 @@ export default function ServicesPage({ navigate, hash }) {
           </h1>
 
           <p className="mx-auto mt-5 max-w-2xl text-muted-foreground text-base sm:text-lg leading-relaxed">
-            Seven interconnected disciplines under one roof. From the first
+            Eight interconnected disciplines under one roof. From the first
             sketch to the final install — we own the whole chain so the quality
             never breaks.
           </p>

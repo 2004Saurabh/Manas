@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Truck, Printer, Store, Palette, Umbrella, Tent } from "lucide-react";
+import { Truck, Printer, Store, Palette, Umbrella, Tent, Package } from "lucide-react";
 import { BRAND_ASSETS } from "../data/manasData";
 
 const WHEEL_ITEMS = [
@@ -9,6 +9,7 @@ const WHEEL_ITEMS = [
   { icon: Palette, label: "Offset Printing", desc: "Business cards, brochures, stationery." },
   { icon: Umbrella, label: "Umbrella Advertising", desc: "Printed promotional umbrellas." },
   { icon: Tent, label: "Canopy Advertising", desc: "Custom canopies for events & outdoor." },
+  { icon: Package, label: "Cutting & Box Making", desc: "Any shapes cutting, creasing & custom boxes." },
 ];
 
 export default function ServicesWheel() {
