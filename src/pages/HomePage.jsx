@@ -237,11 +237,11 @@ export default function HomePage({ navigate }) {
               { n: 1200, s: "+", l: "Projects Completed" },
               { n: 480, s: "+", l: "Happy Clients" },
               { n: 15, s: "+", l: "Years Experience" },
-              { n: 40, s: "+", l: "Cities Served" },
-              { n: 2, s: "M sq/ft", l: "Print Capacity" },
+              { n: 40, s: "+", l: "Cities Service Available" },
+              { n: 7000, s: " sq/ft", l: "Per Day Print Capacity" },
             ].map((stat) => (
               <div key={stat.l} className="text-center">
-                <div className="font-display text-4xl sm:text-5xl font-bold text-gradient">
+                <div className="font-display text-3xl sm:text-4xl lg:text-5xl font-bold text-gradient whitespace-nowrap">
                   <Counter to={stat.n} suffix={stat.s} />
                 </div>
                 <div className="mt-2 text-xs uppercase tracking-widest text-muted-foreground font-medium">
