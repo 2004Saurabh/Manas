@@ -217,20 +217,25 @@ export default function AboutPage({ navigate }) {
         <div className="mx-auto max-w-7xl px-6">
           <div className="text-center">
             <div className="text-xs uppercase tracking-[0.25em] text-accent font-semibold">
-              Trusted by
+              Our Esteemed Clients
             </div>
             <h2 className="mt-3 font-display text-4xl sm:text-5xl font-bold">
-              Brands that returned.
+              Trusted by industry leaders.
             </h2>
+            <p className="mt-4 max-w-xl mx-auto text-sm text-muted-foreground">
+              Partnering with India's premier agro-tech, retail, and manufacturing enterprises for over 15 years.
+            </p>
           </div>
 
-          <div className="mt-12 grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-5">
+          <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
             {BRANDS.map((brand) => (
               <div
                 key={brand}
-                className="grid h-20 place-items-center rounded-xl glass text-xs font-bold tracking-[0.2em] text-muted-foreground transition hover:text-foreground hover:scale-105 border border-white/5"
+                className="group flex flex-col items-center justify-center p-5 rounded-2xl glass text-center min-h-[5.5rem] transition-all duration-300 hover:scale-[1.03] hover:border-primary/40 hover:bg-white/10 border border-white/10 shadow-sm"
               >
-                {brand}
+                <span className="font-display text-xs sm:text-sm font-semibold text-foreground/90 group-hover:text-white transition">
+                  {brand}
+                </span>
               </div>
             ))}
           </div>

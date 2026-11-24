@@ -299,48 +299,50 @@ export const SERVICES = [
 
 export const TESTIMONIALS = [
   {
-    name: "Rohan Mehta",
-    role: "Founder, Nexa Retail",
-    text: "Manas rebuilt our storefront identity across 12 stores. Traffic is up 34%. The craft is unreal."
+    name: "Sunil Sharma",
+    role: "Regional Marketing Lead, Chambal Fertilizer & Chemicals Ltd",
+    text: "Manas Advertising delivered our rural farmer campaign canopies and van branding across 3 states with outstanding color vibrancy and fast delivery."
   },
   {
-    name: "Aisha Kapoor",
-    role: "CMO, Urban Fleet Co.",
-    text: "Their van wraps turned our vehicles into a moving campaign. Every install was flawless."
+    name: "Rajesh Kulkarni",
+    role: "Supply Chain & Brand Ops, DCM Shriram Industries",
+    text: "Their promotional flex and custom packaging boxes met our strict industrial specifications. Flawless execution across every batch."
   },
   {
-    name: "Devansh Rao",
-    role: "Marketing Head, BrewLab",
-    text: "The umbrella series became our brand signature. Photography-perfect quality."
+    name: "M. K. Menon",
+    role: "Retail Visual Merchandising, Malabar Gold & Diamonds",
+    text: "The premium in-shop branding and illuminated storefront displays transformed our showroom experience. Superb attention to detail."
   },
   {
-    name: "Priya Nair",
-    role: "GM, Halcyon Hospitality",
-    text: "From canopy to menu print — one team, one standard. That's rare in this industry."
+    name: "Dr. Sandeep Patel",
+    role: "Commercial Marketing Head, Mosaic India Ltd",
+    text: "From branded dealer umbrellas to large highway flex hoardings, Manas has been our trusted single-source branding partner for years."
   },
   {
-    name: "Karan Shah",
-    role: "Founder, Motive Motors",
-    text: "We wrapped 40 vehicles in three weeks. Zero downtime, zero complaints."
+    name: "Anand Deshmukh",
+    role: "Sales & Field Promotions, Ankur Seeds Ltd",
+    text: "The high-volume promo canopies and field demo vehicle branding generated incredible farmer engagement during our crop season roadshows."
   },
   {
-    name: "Meera Iyer",
-    role: "Retail Head, Verre & Co.",
-    text: "The in-shop branding refresh completely changed footfall behaviour. Worth every rupee."
+    name: "Vivek Agrawal",
+    role: "Operations Director, Dharmaj Crop Guard Ltd",
+    text: "Exceptional printing quality and on-time nationwide delivery. Their 7,000 sq/ft per day capacity easily handles our peak campaign requirements."
   }
 ];
 
 export const BRANDS = [
-  "NEXA RETAIL",
-  "URBAN FLEET",
-  "BREWLAB",
-  "HALCYON",
-  "MOTIVE",
-  "VERRE & CO.",
-  "AXIS FOODS",
-  "NORTH STAR",
-  "OASIS HOTELS",
-  "KAYA PHARMA"
+  "Chambal Fertilizer and Chemicals Ltd",
+  "Mosaic India Ltd",
+  "RM Phosphate Pvt. Ltd",
+  "Malabar Gold and Diamonds",
+  "DCM Shriram Industries",
+  "Ankur Seeds Ltd",
+  "Hytech Seeds Hyderabad",
+  "Barrix Agro Sciences",
+  "Dharmaj Crop Guard Ltd",
+  "Sulphur Mills Ltd",
+  "Geolife Agri Tech Pvt. Ltd",
+  "Nath Bio-Genes"
 ];
 
 export const BELIEFS = [
