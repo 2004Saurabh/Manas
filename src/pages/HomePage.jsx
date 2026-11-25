@@ -16,11 +16,13 @@ import {
 } from "lucide-react";
 import Counter from "../components/Counter";
 import ServicesWheel from "../components/ServicesWheel";
+import ClientLogoCard from "../components/ClientLogoCard";
 import {
   BRAND_ASSETS,
   SERVICES,
   TESTIMONIALS,
   BRANDS,
+  CLIENTS,
   CONTACT_INFO,
 } from "../data/manasData";
 
@@ -298,20 +300,22 @@ export default function HomePage({ navigate }) {
           </div>
 
           {/* Corporate Clients Logo Grid */}
-          <div className="mt-20 pt-16 border-t border-white/10">
-            <div className="text-center mb-8">
-              <span className="text-xs uppercase tracking-[0.25em] text-accent font-semibold">
-                Our Corporate Clients & Brand Partners
-              </span>
+          <div className="mt-24 pt-20 border-t border-white/10">
+            <div className="text-center mb-12">
+              <div className="inline-flex items-center gap-2 rounded-full glass px-4 py-1.5 text-xs uppercase tracking-[0.2em] text-accent font-semibold mb-3">
+                Corporate Portfolio
+              </div>
+              <h3 className="font-display text-3xl sm:text-4xl font-bold text-foreground">
+                Trusted by industry leaders.
+              </h3>
+              <p className="mt-3 text-sm text-muted-foreground max-w-xl mx-auto">
+                Prominent agro-biotech, chemicals, manufacturing & luxury retail enterprises powered by Manas Advertising.
+              </p>
             </div>
-            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-              {BRANDS.map((brand) => (
-                <div
-                  key={brand}
-                  className="flex items-center justify-center p-4 min-h-[4.5rem] rounded-2xl glass-strong border border-white/10 text-center text-xs font-semibold text-foreground/80 hover:text-white hover:border-primary/40 hover:scale-105 transition-all duration-300 shadow-sm"
-                >
-                  {brand}
-                </div>
+
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+              {CLIENTS.map((client) => (
+                <ClientLogoCard key={client.id} client={client} />
               ))}
             </div>
           </div>

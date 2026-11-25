@@ -11,11 +11,13 @@ import {
 } from "lucide-react";
 import BackgroundBlobs from "../components/BackgroundBlobs";
 import Counter from "../components/Counter";
+import ClientLogoCard from "../components/ClientLogoCard";
 import {
   BELIEFS,
   TEAM_MEMBERS,
   MILESTONES,
   BRANDS,
+  CLIENTS,
 } from "../data/manasData";
 
 const ICON_MAP = {
@@ -227,16 +229,9 @@ export default function AboutPage({ navigate }) {
             </p>
           </div>
 
-          <div className="mt-12 grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-4">
-            {BRANDS.map((brand) => (
-              <div
-                key={brand}
-                className="group flex flex-col items-center justify-center p-5 rounded-2xl glass text-center min-h-[5.5rem] transition-all duration-300 hover:scale-[1.03] hover:border-primary/40 hover:bg-white/10 border border-white/10 shadow-sm"
-              >
-                <span className="font-display text-xs sm:text-sm font-semibold text-foreground/90 group-hover:text-white transition">
-                  {brand}
-                </span>
-              </div>
+          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {CLIENTS.map((client) => (
+              <ClientLogoCard key={client.id} client={client} />
             ))}
           </div>
         </div>
